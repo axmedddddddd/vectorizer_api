@@ -1,0 +1,22 @@
+stages:
+  - build
+  - run
+
+build:
+  stage: build
+  script:
+    - docker build -t 400/vectorizer .
+    - docker image prune -f
+  tags:
+    - builder
+  only:
+    - master
+
+start-service:
+  stage: run
+  script:
+    - source /srv/scripts/recreate_service.sh vectorizer-server
+  tags:
+    - builder
+  only:
+    - master

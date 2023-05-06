@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+
+# Editors
+.vscode/
+.idea/
+
+# Vectorizer
+vectorServer.egg-info/
+vectorServer/logs/
+vectorServer/models_storage/
+
+# Redis
+redis/data/dump.rdb
+
+*.log

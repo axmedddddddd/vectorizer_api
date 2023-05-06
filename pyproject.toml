@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vectorServer"
+version = "0.1.0"
+authors = [
+    { name="Akhmed Arbuliev", email="amarbuliev@edu.hse.ru" },
+    { name="Nikita Klimin", email="naklimin@edu.hse.ru" },
+]
+description = "Vectorizer API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://git.miem.hse.ru/400/production/vectorizer-api"

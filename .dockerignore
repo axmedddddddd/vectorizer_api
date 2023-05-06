@@ -1,0 +1,16 @@
+# Editors
+.vscode/
+.idea/
+
+# Python
+.venv/
+.pytest_cache/
+__pycache__/
+
+# vectorServer
+vectorServer.egg-info
+README.md
+models_storage/
+examples/
+
+*.log
